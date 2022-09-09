@@ -8,7 +8,7 @@
 }
 body{
     text-align: center;
-    color: #0259a1;
+    color: #1659BF;
     overflow: hidden;
     background-color: white;
     display: flex;
@@ -21,6 +21,8 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    border-radius: 24px;
+    background-color: #EEEEEE;
 }
 h2{
     margin: 10vh;
@@ -37,8 +39,8 @@ h2{
     margin: 2vw;
     font-weight: 600;
     font-weight: 600;
-    height: 24vw;
-    width: 24vw;
+    height: calc(18vh + 10vw);
+    width: calc(18vh + 10vw);
     color: white;
     margin-bottom: 1%;
     transition: 0.5s;
@@ -78,11 +80,5 @@ a{
     color: inherit;
 }
 
-@media (max-width: 768px)
-{
-    .btn{
-        height: 20vh;
-        width: 20vh;
-    }
-}
+
 
