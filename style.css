@@ -25,12 +25,16 @@ body{
     background-color: #EEEEEE;
 }
 h2{
-    margin: 10vh 0;
     letter-spacing: .1rem;
     font-weight: 600;
+    margin: 10vh 0;
 }
 .btn-group{
     display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    flex-wrap: wrap;
     flex-direction: row;
     position: absolute;
     top: 50%;
@@ -40,15 +44,13 @@ h2{
 }
 .btn{
     font-size: calc(1.5vh + 1.5vw);
-    margin: 4vw;
     font-weight: 600;
-    font-weight: 600;
-    height: calc(16vh + 10vw);
-    width: calc(16vh + 10vw);
+    height: calc(6vh + 4vw);
+    width: 90vw;
     color: white;
-    margin-bottom: 1%;
+    margin: 0.5% 0;
     transition: 0.5s;
-    border-radius: 20%;
+    border-radius: 6px;
     opacity: 0.8;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
@@ -56,7 +58,7 @@ h2{
 .btn:hover{
     cursor: pointer;
     filter: brightness(0.9);
-    transform: scale(0.95);
+    transform: scale(0.98);
 }
 .btn:focus{
     border: none;
@@ -79,20 +81,4 @@ a{
     text-decoration: none;
     color: inherit;
 }
-
-@media (max-width: 820px) {
-    .btn-group{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .btn{
-        height: 10vh;
-        width: 90vw;
-        border-radius: 6px;
-    }
-}
-
 
